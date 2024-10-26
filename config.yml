@@ -1,0 +1,4 @@
+log_level: DEBUG
+persist_directory: chroma_persistent_storage
+collection_name: document_qa_collection
+docs_directory: ./docs

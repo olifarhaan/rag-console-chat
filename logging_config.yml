@@ -1,0 +1,4 @@
+log_level: INFO
+max_file_size: 10000000
+backup_count: 5
+log_file: rag_pipeline.log
