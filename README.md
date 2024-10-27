@@ -1,5 +1,7 @@
 # RAG Console Chat Application: Better Information Retrieval and Generation
 
+![RAG Pipeline Flow](diagram/rag_pipeline_flow.png)
+
 ## Overview
 
 Welcome to the RAG Console Chat Application, a simple yet powerful tool designed to transform the way you interact with and extract information from vast document repositories. This project implements document ingestion, embedding generation, and retrieval-augmented generation (RAG). If you are looking to chat with your data or summarize complex topics, the RAG Console Chat Application is your go-to tool for intelligent information processing.
@@ -52,6 +54,7 @@ To set up the RAG Pipeline on your local machine, follow these steps:
    This is necessary for compiling some of the dependencies. Download and install from [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
 3. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/olifarhaan/rag-console-chat.git
    cd rag-console-chat
@@ -59,6 +62,7 @@ To set up the RAG Pipeline on your local machine, follow these steps:
 
 4. **Install Python Dependencies**:
    Ensure you have Python 3.8+ installed. Then, create a virtual environment and install the required packages:
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -67,12 +71,14 @@ To set up the RAG Pipeline on your local machine, follow these steps:
 
 5. **Set Up Environment Variables**:
    Create a `.env` file in the root directory and add your OpenAI API key:
+
    ```
    OPENAI_API_KEY=your_openai_api_key
    ```
 
 6. **Run the Application**:
    Start the RAG Pipeline by executing:
+
    ```bash
    python app.py
    ```
@@ -86,3 +92,6 @@ The RAG Console Chat Application is a simple yet powerful tool designed to enhan
 
 - **Licensing**: This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the software, provided that the original license and copyright notice are included in all copies or substantial portions of the software.
 
+- **Diagram**: The diagram was created using [Mermaid](https://mermaid.js.org/).
+
+- **Contact**: For any questions or feedback, please contact [olifarhaan@gmail.com](mailto:olifarhaan@gmail.com) or message me on LinkedIn [@olifarhaan](https://www.linkedin.com/in/olifarhaan/).

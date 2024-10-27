@@ -1,0 +1,24 @@
+---
+config:
+  look: classic
+  theme: default
+---
+graph TD
+    A[User Input] --> B[RAGPipeline]
+    B --> C[DocumentIngestion]
+    B --> D[EmbeddingService]
+    B --> E[VectorStoreService]
+    E --> F[ChromaVectorStore]
+    B --> G[ResponseGeneratorFactory]
+    G --> H[QuestionAnswerGenerator]
+    G --> I[SummaryGenerator]
+    B --> J[VectorStoreRetriever]
+    J --> E
+    L[Config] --> B
+    N[Main Menu] --> O[Chat Mode]
+    N --> P[Summarize Mode]
+    O --> B
+    P --> B
+    D[EmbeddingService<br><font size=1>uses OpenAI APIs</font>]
+    H[QuestionAnswerGenerator<br><font size=1>uses OpenAI APIs</font>]
+    I[SummaryGenerator<br><font size=1>uses OpenAI APIs</font>]
